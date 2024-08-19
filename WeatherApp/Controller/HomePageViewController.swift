@@ -15,6 +15,10 @@ class HomePageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         buttonLabel.layer.cornerRadius = 24.0
+        
     }
     
+    @IBAction func getStartedBtn(_ sender: UIButton) {
+        UserDefaults.standard.setValue(true, forKey: "StartedApp")
+    }
 }
